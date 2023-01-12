@@ -1,0 +1,140 @@
+:root{
+    --color-azul-primario:#0071B1;
+    --color-naranja:#E65A24;
+    --color-azul-secundario:#29A0D7;
+    --blanco:#fff;
+    --negro:#000;
+
+}
+
+ 
+html{
+    scroll-behavior: smooth;
+    background-color:white;
+    font-family: 'Segoe UI', sans-serif;
+
+}
+
+.text-orange{
+    color: var(--color-naranja);
+}
+
+.navbar-brand{
+ padding-right:1rem ;
+ text-align: center;
+}
+
+.navbar-nav {
+    flex-direction: column!important;
+    line-height: 5px;
+    color: var(--color-azul-primario)!important;
+
+}
+
+.navbar-nav a{
+    color: var(--color-azul-primario)!important;
+}
+
+
+.active, .navbar-text{
+    font-weight: bold !important;
+    color: var(--color-azul-primario)!important;
+}
+.navbar-text{
+    text-align: left !important;
+}
+.navbar-brand{
+    display: none;
+}
+.navbar-logo img{
+ margin-left: 10px;
+}
+
+
+.opcional{
+    background-color: #DBDBDB;
+    border-bottom: 10px solid var(--color-azul-primario);
+}
+
+.btn-orange{
+    background-color: var(--color-naranja) !important;
+    color: var(--blanco) !important;
+
+}
+
+
+.bg-orange{
+    background-color: var(--color-naranja) !important;
+    color: var(--blanco) !important;
+}
+
+
+.contenedor-banner{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+
+
+.title-form{
+    border-bottom:3px solid var(--color-azul-secundario) !important;
+}
+
+.texto-banner{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 500px;
+    align-items: left;
+}
+
+.texto-banner h3{
+    font-size: 20px; 
+}
+
+
+.llama h4{
+    font-size: 18px !important;
+    padding: 10px
+}
+
+.checks{
+    background-color:#0070b191;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+}
+
+.icon{
+    color: var(--color-naranja);
+    font-size: 20px;
+}
+
+footer{
+    color: var(--blanco);
+    background-color: #4D4D4D;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .navbar-brand{
+        display: block;
+    }
+    .navbar-logo{
+        display: none;
+    }
+    .contenedor-banner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .checks{
+        display: none;
+    }
+
+}
